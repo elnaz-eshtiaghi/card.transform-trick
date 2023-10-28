@@ -1,7 +1,7 @@
 # Accordion-trick.6(transform)
 **If you have a lot of information to display on your site, why don't you use my project**
 
-![Screenshot_2023_10_28-2](https://github.com/elnaz-eshtiaghi/trick.6-transform-/assets/146030206/1725456b-1018-41e8-8773-1400c45c9129)
+![Screenshot_2023_10_28-2](https://github.com/elnaz-eshtiaghi/trick.6-transform-/assets/146030206/5db9b5a8-0da2-4ce5-ad08-f974280dfcb6)
 - [Demo Project]( https://elnaz-eshtiaghi.github.io/trick.6-transform-/)
 
 - Developed by elnaz eshtiaghi
