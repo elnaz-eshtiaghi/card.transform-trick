@@ -1,0 +1,346 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: pacifico;
+  src: url(../font/Pacifico-Regular.ttf);
+}
+body {
+  width: 100%;
+  background-image: url(../img/poker-background-.jpg);
+  background-size: cover;
+  font-family: pacifico;
+  overflow-x: hidden;
+}
+
+main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.055));
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section {
+  width: 100%;
+}
+section > .row {
+  width: 100%;
+  justify-content: space-evenly;
+  align-content: space-between;
+}
+section > .row > * {
+  position: relative;
+}
+section > .row .account {
+  position: absolute;
+  box-shadow: 0 0 10px 10px black;
+}
+section > .row .account > figure {
+  width: 150px;
+  height: 100px;
+  position: relative;
+  z-index: 5;
+}
+section > .row .account > figure > img {
+  width: 100%;
+  height: 100%;
+}
+section > .row .account > figure > figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 15%;
+  bottom: 18%;
+}
+section > .row .account > figure > figcaption > div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 1px 1px black;
+  outline: 1px solid rgb(255, 187, 0);
+  outline-offset: 2px;
+  background-image: url(../img/green-bg.jpg);
+  transition: 1s;
+}
+section > .row .account > figure > figcaption > div:hover {
+  outline-color: red;
+  background-image: none;
+  background-color: aliceblue !important;
+}
+section > .row .account > figure > figcaption > div > img {
+  width: 100%;
+  height: 100%;
+}
+section > .row .account > figure > figcaption > p {
+  margin-left: 10px;
+}
+section > .row .account:nth-of-type(1) {
+  top: 175px;
+  left: 250px;
+}
+section > .row .account:nth-of-type(2) {
+  top: 175px;
+  right: 250px;
+}
+section > .row .account:nth-of-type(3) {
+  top: 590px;
+  left: 250px;
+}
+section > .row .account:nth-of-type(4) {
+  top: 590px;
+  right: 250px;
+}
+section > .row .account:nth-of-type(4) > figure > figcaption > div:hover {
+  outline-color: green;
+}
+section > .row > .container {
+  height: 200px;
+  padding: 30px;
+}
+section > .row > .container > .row {
+  position: relative;
+  width: 100%;
+}
+section > .row > .container > .row > figure {
+  width: 140px;
+  height: 170px;
+  position: absolute;
+  transform-origin: 98% 98%;
+  cursor: pointer;
+  transition: 1s;
+}
+section > .row > .container > .row > figure:nth-of-type(1) {
+  transform: rotate(-20deg);
+}
+section > .row > .container > .row > figure:nth-of-type(2) {
+  transform: rotate(-5deg);
+}
+section > .row > .container > .row > figure:nth-of-type(3) {
+  transform: rotate(10deg);
+}
+section > .row > .container > .row > figure:nth-of-type(4) {
+  transform: rotate(25deg);
+}
+section > .row > .container > .row > figure:nth-of-type(5) {
+  transform: rotate(40deg);
+}
+section > .row > .container > .row > figure > img {
+  width: 100%;
+  height: 100%;
+}
+section > .row .robot1 {
+  width: 100%;
+  transform: scale(-1, -1);
+  margin: 20px;
+}
+section > .row .robot1 > .row {
+  justify-content: center;
+  align-items: start;
+}
+section > .row .robot1 > .row:hover > figure:nth-of-type(1) {
+  transform: rotate(-40deg);
+}
+section > .row .robot1 > .row:hover > figure:nth-of-type(2) {
+  transform: rotate(-10deg);
+}
+section > .row .robot1 > .row:hover > figure:nth-of-type(3) {
+  transform: rotate(20deg);
+}
+section > .row .robot1 > .row:hover > figure:nth-of-type(4) {
+  transform: rotate(50deg);
+}
+section > .row .robot1 > .row:hover > figure:nth-of-type(5) {
+  transform: rotate(80deg);
+}
+section > .row .robot2 {
+  width: 25%;
+  transform: rotate(-270deg);
+  margin: 100px 0;
+}
+section > .row .robot2 > .row {
+  align-items: start;
+}
+section > .row .robot2 > .row:hover > figure:nth-of-type(1) {
+  transform: rotate(-40deg);
+}
+section > .row .robot2 > .row:hover > figure:nth-of-type(2) {
+  transform: rotate(-10deg);
+}
+section > .row .robot2 > .row:hover > figure:nth-of-type(3) {
+  transform: rotate(20deg);
+}
+section > .row .robot2 > .row:hover > figure:nth-of-type(4) {
+  transform: rotate(50deg);
+}
+section > .row .robot2 > .row:hover > figure:nth-of-type(5) {
+  transform: rotate(80deg);
+}
+section > .row .robot3 {
+  width: 25%;
+  margin: 100px 0;
+  transform: rotate(270deg);
+}
+section > .row .robot3 > .row {
+  align-items: start;
+}
+section > .row .robot3 > .row:hover > figure:nth-of-type(1) {
+  transform: rotate(-40deg);
+}
+section > .row .robot3 > .row:hover > figure:nth-of-type(2) {
+  transform: rotate(-10deg);
+}
+section > .row .robot3 > .row:hover > figure:nth-of-type(3) {
+  transform: rotate(20deg);
+}
+section > .row .robot3 > .row:hover > figure:nth-of-type(4) {
+  transform: rotate(50deg);
+}
+section > .row .robot3 > .row:hover > figure:nth-of-type(5) {
+  transform: rotate(80deg);
+}
+section > .row .elnaz {
+  width: 100%;
+  margin: 30px 0;
+}
+section > .row .elnaz > .row {
+  justify-content: center;
+  align-items: start;
+}
+section > .row .elnaz > .row > figure {
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px gray;
+}
+section > .row .elnaz > .row > figure:hover ~ figure {
+  transform: rotate(310deg);
+}
+section > .row .elnaz > .row > figure:nth-of-type(1):hover {
+  transform: skew(-4deg, 4deg) perspective(1100px) translate(-50px, -450px) translatez(-500px);
+}
+section > .row > .box {
+  width: 50%;
+  background-image: url(../img/green-bg.jpg);
+  border-radius: 50px;
+  border: 5px solid rgb(255, 187, 0);
+  outline: 7px solid rgb(75, 75, 75);
+  outline-offset: 2px;
+  box-shadow: inset 5px 5px 5px black, 0 0 5px 5px rgb(0, 0, 0), inset 1px 1px 1px rgb(0, 0, 0), inset -5px -5px 5px rgb(0, 0, 0), 0 0 1px 1px black;
+  padding: 30px;
+  justify-content: end;
+  position: relative;
+}
+section > .row > .box > span {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: linear-gradient(rgb(20, 20, 20) 50%, rgb(75, 75, 75));
+  border: 3px solid rgb(65, 65, 65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 1px 1px black;
+}
+section > .row > .box > span > span {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background-image: radial-gradient(rgb(48, 48, 48), rgb(20, 20, 20));
+  border: 3px solid rgb(65, 65, 65);
+  box-shadow: 0 0 1px 2px black, inset 2px 2px 2px black, inset 2px 2px 2px rgb(124, 124, 124);
+  outline: 3px dotted gray;
+  outline-offset: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(199, 199, 199);
+  font-size: 1vw;
+  text-shadow: 1px 1px 1px black, -1px -1px 1px black;
+}
+section > .row > .box > span:nth-of-type(1) {
+  right: -30px;
+  top: calc(50% - 25px);
+}
+section > .row > .box > span:nth-of-type(2) {
+  bottom: -30px;
+  right: calc(50% - 25px);
+}
+section > .row > .box > figure {
+  width: 100%;
+  overflow: hidden;
+  opacity: 0.5;
+  text-align: center;
+}
+section > .row > .box > figure > img {
+  width: 10%;
+  text-align: center;
+}
+section > .row > .box > figure > figcaption {
+  color: rgb(201, 201, 201);
+  text-shadow: 1px 1px 1px black, -1px -1px 1px black;
+}
+section > .row > .box > .box_card {
+  margin: 0px 18px;
+}
+section > .row > .box > .box_card:nth-of-type(1) {
+  width: 50%;
+}
+section > .row > .box > .box_card:nth-of-type(1) > .row {
+  height: 200px;
+}
+section > .row > .box > .box_card:nth-of-type(1) > .row > div {
+  width: 80px;
+  height: 120px;
+  box-shadow: 10px 10px 50px rgba(128, 128, 128, 0.39);
+  cursor: pointer;
+}
+section > .row > .box > .box_card:nth-of-type(1) > .row > div > img {
+  width: 100%;
+  height: 100%;
+}
+section > .row > .box > .box_card:nth-of-type(1) > .row > div:nth-of-type(1) {
+  align-self: center;
+  transform: rotate(-14deg);
+}
+section > .row > .box > .box_card:nth-of-type(1) > .row > div:nth-of-type(2) {
+  align-self: self-start;
+  transform: translatex(-30px) rotate(4deg);
+}
+section > .row > .box > .box_card:nth-of-type(1) > .row > div:nth-of-type(3) {
+  align-self: center;
+  transform: translatex(-60px) rotate(10deg);
+}
+section > .row > .box > .box_card:nth-of-type(2), section > .row > .box > .box_card:nth-of-type(3) {
+  height: 60px;
+}
+section > .row > .box > .box_card:nth-of-type(2) > figure, section > .row > .box > .box_card:nth-of-type(3) > figure {
+  width: 40px;
+  height: 60px;
+  position: relative;
+  border-radius: 5px;
+}
+section > .row > .box > .box_card:nth-of-type(2) > figure > img, section > .row > .box > .box_card:nth-of-type(3) > figure > img {
+  width: 100%;
+  height: 100%;
+}
+section > .row > .box > .box_card:nth-of-type(2) > figure > figcaption, section > .row > .box > .box_card:nth-of-type(3) > figure > figcaption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 11px;
+  left: 0px;
+  color: aliceblue;
+  font-size: 1.5vw;
+  text-align: center;
+}
+section > .row > .box > .box_card:nth-of-type(2) {
+  width: 7%;
+}
+section > .row > .box > .box_card:nth-of-type(3) {
+  width: 100%;
+}/*# sourceMappingURL=card.css.map */
